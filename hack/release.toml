@@ -15,6 +15,11 @@ See [Talos Linux documentation](https://www.talos.dev/v1.5/talos-guides/configur
 """
 
 [notes]
+    [notes.zfs]
+        title = "ZFS"
+        description = """\
+ZFS extensions now also ship zfs-tools and an extension service that imports all zpools on startup .
+"""
 
 
 [make_deps]
