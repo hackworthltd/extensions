@@ -42,6 +42,8 @@ space = $(empty) $(empty)
 TARGETS = \
 		amd-ucode \
 		bnx2-bnx2x \
+		chelsio-drivers \
+		chelsio-firmware \
 		drbd \
 		gasket-driver \
 		gvisor \
