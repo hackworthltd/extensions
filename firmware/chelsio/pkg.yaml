@@ -3,7 +3,9 @@ variant: scratch
 shell: /toolchain/bin/bash
 dependencies:
   - stage: base
-  - image: "{{ .PKGS_PREFIX }}/linux-firmware:{{ .BUILD_ARG_PKGS }}"
+  # Our linux-firmware build is incredibly slow, or stuck. Use upstream.
+  #- image: "{{ .PKGS_PREFIX }}/linux-firmware:{{ .BUILD_ARG_PKGS }}"
+  - image: "ghcr.io/siderolabs/linux-firmware:v1.5.0-9-g7f9d6eb"
 steps:
   - prepare:
       - |
