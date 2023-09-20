@@ -1,5 +1,5 @@
 REGISTRY ?= ghcr.io
-USERNAME ?= siderolabs
+USERNAME ?= hackworthltd
 SHA ?= $(shell git describe --match=none --always --abbrev=8 --dirty)
 TAG ?= $(shell git describe --tag --always --dirty)
 BRANCH ?= $(shell git rev-parse --abbrev-ref HEAD)
@@ -19,7 +19,7 @@ endif
 
 # keep in sync with Pkgfile
 BLDR_RELEASE ?= v0.2.0
-PKGS ?= v1.5.0-9-g7f9d6eb
+PKGS ?= v1.5.0-11-g96d86bd
 
 BUILD := docker buildx build
 PLATFORM ?= linux/amd64,linux/arm64
